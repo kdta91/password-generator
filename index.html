@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+</head>
+<body>
+    <div class="container text-center center">
+        <div class="row">
+            <h1>Password Generator</h1>
+            <p class="secondary-text">Generates password with length between 8 - 24</p>
+        </div>
+        <div class="row">
+            <div class="flash-message">Copied!</div>
+            <div id="password-container" data-clipboard-target="#password">
+                <span id="password">Password</span>
+            </div>
+        </div>
+        <div class="row">
+            <button id="btn-generate" class="btn" onclick="passwordGenerator.generate()">Generate</button>
+        </div>
+    </div>
+
+    <script src="generator.js"></script>
+</body>
+</html>
